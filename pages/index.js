@@ -1,13 +1,8 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
+import Globel from "./globel";
 import styles from "../styles/Home.module.css";
 
-const Globel = dynamic(() => import("./globel"), {
-  ssr: false
-});
-
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Head>
